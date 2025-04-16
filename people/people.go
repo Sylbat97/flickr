@@ -151,11 +151,6 @@ func GetPhotos(client *flickr.FlickrClient,
 
 	response := &GetPhotosResponse{}
 	err := flickr.DoGet(client, response)
-	//	if err == nil {
-	//		fmt.Println("API response:", response.Extra)
-	//	} else {
-	//		fmt.Println("API error:", err)
-	//	}
 	return response, err
 }
 
@@ -168,10 +163,5 @@ func FindByUsername(client *flickr.FlickrClient, username string) (*FindByUserna
 
 	response := &FindByUsernameResponse{}
 	err := flickr.DoGet(client, response)
-	//	if err == nil {
-	//		fmt.Println("API response:", response.Extra)
-	//	} else {
-	//		fmt.Println("API error:", err)
-	//	}
 	return response, err
 }
